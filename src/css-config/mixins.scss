@@ -1,0 +1,34 @@
+@mixin sm {
+    @media only screen and (min-width: 640px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media only screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media only screen and (min-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media only screen and (min-width: 1536px) {
+        @content;
+    }
+}
+
+// Quy tắc Mixin
+// Mixin giúp bạn tạo các hàm được sử dụng trong SCSS, bạn hoàn toàn có thể truyền các tham số vào bên trong nó để sử dụng.
+// Mixin là một cơ chế khá phổ biến trong SASS. Công dụng của nó là mang nhiều thuộc tính mà bạn đã quy ước trong một mix nào 
+// đó rồi @include vào một thành phần bất kỳ mà không cần phải viết lại các thuộc tính đó (Ví dụ ở trên là color vs font-style)
